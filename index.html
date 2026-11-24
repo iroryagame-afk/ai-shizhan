@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI新手实战课</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/course.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <header class="top">
+    <p class="badge">本地演练 / 预填教学数据</p>
+    <div class="top-row">
+      <p class="brand">AI新手实战课</p>
+    </div>
+    <p class="disclaimer">学习推荐，不是能力鉴定或职业认证</p>
+    <div class="save-row">
+      <button type="button" class="primary" id="save-btn">保存到这台浏览器</button>
+      <button type="button" id="export-btn">导出已校验记录</button>
+    </div>
+    <p class="save-note" id="save-note" role="status">写下的内容先停在这次打开的页面里。点「保存到这台浏览器」之后，才写入这台浏览器。</p>
+  </header>
+  <div class="shell">
+    <details class="toc-wrap" id="toc-wrap">
+      <summary>课程目录</summary>
+      <nav class="toc" id="toc" aria-label="课程目录"></nav>
+    </details>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <footer>
+    <p>这是离线演练站。页面不连接模型，不连接学员账号，也不把你写下的内容发到别处。</p>
+  </footer>
+  <noscript>
+    <p>需要在这台浏览器里启用脚本，才能做课内演练。启用之后，进度仍然只留在这台浏览器。</p>
+  </noscript>
+  <script src="js/rules.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
